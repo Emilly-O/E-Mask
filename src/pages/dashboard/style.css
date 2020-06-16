@@ -1,0 +1,74 @@
+body {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background: #3617A6;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    border-left: 2px solid #000;
+    display: inline-block;
+    padding: 0 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.25s
+}
+
+nav a:hover{
+    font-size: 18px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 20px auto;
+}
+
+.search input {
+    background: none;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid #383838;
+    margin-right: 120px;
+    padding: 10px 10px;
+    outline: none;
+    width: 180px;
+    background-image: url(../../../assets/img/lupa.svg) ;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 20px 20px;
+}
+
+.search input:focus {
+    transition: 1.0s;
+    width: 200px
+}
+.card-layout {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.card-item {
+    width: 250px;
+    border: 2px solid #383838;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.card-item img {
+    width: 30px;
+    padding: 30px;
+}

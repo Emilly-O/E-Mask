@@ -1,5 +1,5 @@
 {
-  "name": "e-mask",
+  "name": "tasks",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -9,15 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Emilly-O/E-Mask.git"
+    "url": "git+https://github.com/anapmendes/tasks.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Emilly-O/E-Mask/issues"
+    "url": "https://github.com/anapmendes/tasks/issues"
   },
-  "homepage": "https://github.com/Emilly-O/E-Mask#readme",
+  "homepage": "https://github.com/anapmendes/tasks#readme",
   "devDependencies": {
     "electron": "^9.0.0"
+  },
+  "dependencies": {
+    "electron-reload": "^1.5.0"
   }
 }
