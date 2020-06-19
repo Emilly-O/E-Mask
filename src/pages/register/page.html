@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     </link>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Registro</title>
 </head>
 
@@ -15,8 +16,11 @@
             <form>
                 <h1>registro</h1>
                 <input id="icon" type="text" placeholder="nome">
+                <input id="empresa" type="number" placeholder="CPF/CNPJ">
                 <input id="icone" type="email" placeholder="e-mail">
-                <input id="local" type="text" placeholder="cidade">
+                <input id="contato" type="number" placeholder="telefone/celular">
+                <input id="local" type="text" placeholder="cidade-estado">
+                <input id="cep" type="number" placeholder="CEP">
                 <input id="senha" type="password" placeholder="senha">
             </form>
             <div class="row">
@@ -27,6 +31,16 @@
             </div>
         </div>
     </div>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+        }
+    </script>
     <script src="../login/script.js"></script>
 </body>
 

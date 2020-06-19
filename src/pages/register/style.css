@@ -1,8 +1,10 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
     background-image: url(../../../assets/img/sau.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 .card {
@@ -14,15 +16,15 @@ body {
 }
 
 .box {
-    width: 300px;
+    width: 330px;
     padding: 5px;
-    /* background: #2ecc71;
-    border-radius: 300px; */
+    background: #dde6e0;
+    border-radius: 20px;
     text-align: center;
 }
 
 .box h1 {
-    color: #f0efef;
+    color: #000;
 }
 
 .box input {
@@ -35,7 +37,7 @@ body {
     padding: 10px 10px;
     width: 250px;
     outline: none;
-    color: #f0efef;
+    color: #000;
     border-radius: 25px;
     transition: 0.50s;
 }
@@ -47,26 +49,26 @@ body {
 
 .box button {
     border: 0;
-    background: none;
+    background-color: #2ecc71;
     display: block;
     margin:  15px auto;
     text-align: center;
-    border: 2px solid #2ecc71;
+    /* border: 2px solid #2ecc71; */
     padding: 14px 40px;
     outline: none;
-    color: #f0efef;
+    color: #000;
     border-radius: 25px;
     cursor: pointer;
     transition: 0.50s;
 }
 
 .box button:hover {
-    background: #2ecc71;
+    background: #19441f;
 }
 
 .login {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     transition: 0.50s;
 }
 
@@ -88,8 +90,22 @@ body {
     background-position: 10px 6px;
 } 
 
+#empresa{
+    background-image: url(../../../assets/img/company.svg);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: 10px  5px;
+}
+
 #icone{
     background-image: url(../../../assets/img/email.svg);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: 10px  5px;
+}
+
+#contato{
+    background-image: url(../../../assets/img/phone.svg);
     background-repeat: no-repeat;
     background-size: 25px 25px;
     background-position: 10px  5px;
@@ -102,9 +118,71 @@ body {
     background-position: 8px 5px;
 }
 
+#cep{
+    background-image: url(../../../assets/img/mailbox.svg);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 8px  2px;
+}
+
 #senha{
-    
+    background-image: url(../../../assets/img/password.svg);
     background-repeat: no-repeat;
     background-size: 25px 25px;
     background-position: 9px 4px;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+#scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+}
+
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%,100%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progressbar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(10px);
+}
+
+#progressbar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(30px);
 }

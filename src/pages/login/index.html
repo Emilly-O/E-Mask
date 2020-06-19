@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     </link>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../assets/img/sau.jpg"> 
     <title>Login</title>
 </head>
 
@@ -19,14 +20,28 @@
                 <a class="register text" href="../register/page.html">
                     Registrar
                 </a>
-                <a class="forgot text" href="#">
+                <a class="forgot text" href="#open-modal">
                     Esqueceu a senha?
                 </a>
             </form>
             <button type="submit" onclick="makeLogin()">Login</button>
         </div>
     </div>
-    
+    <!-- Modal - forgot password -->
+    <div id="open-modal" class="modal-window">
+        <div>
+            <a href="#" class="modal-close">
+                <img src="../../../assets/img/close2.svg">
+            </a>
+             <h1>Recuperação de senha</h1>
+             <form>
+                <input type="email" placeholder="E-mail">
+            </form>
+            <div class="row">
+                 <button type="submit" onclick="">Recuperar</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

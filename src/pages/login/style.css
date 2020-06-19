@@ -1,8 +1,8 @@
 body {
-    margin: 0;
-    padding: 0;
-   
-    background-color: rgba(123, 227, 145, 0.10);
+    margin: 0 auto;
+    background-image: url(../../../assets/img/sau.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -15,13 +15,15 @@ body {
 }
 
 .box {
-    width: 500px;
+    width: 300px;
     padding: 40px;
+    background: #dde6e0;
+    border-radius: 20px;
     text-align: center;
 }
 
 .box h1 {
-    color: #fff;
+    color: #000;
     font-size: bold;
 }
 
@@ -36,7 +38,7 @@ body {
     padding: 10px 10px;
     width: 250px;
     outline: none;
-    color: #fff;
+    color: #000;
     border-radius: 25px;
     transition: 0.50s
 }
@@ -49,25 +51,25 @@ body {
 
 .box button {
     border: 0;
-    background: none;
+    background: #2ecc71;
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 2px solid #2ecc71;
     padding: 14px 40px;
     outline: none;
-    color: #fff;
+    color: #000;
     border-radius: 25px;
     transition: 0.50s;
     cursor: pointer;
 }
 
 .box button:hover {
-    background: #2ecc71;
+    background: #19441f;
+    color: #2ecc71;
 }
 
 .box a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     transition: 0.50s;
 }
@@ -80,7 +82,84 @@ body {
     margin-left: 50px;
 }
 
-/* #fundo{
-    opacity: 0.5;
+.modal-window{
+    position: fixed;
+    background-color: rgba(0,0,0,0.9);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-window:target{
+    visibility: visible;
+    opacity: 10;
+    pointer-events: auto;
    
-}  */
+}
+
+.modal-window > div{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #dde6e0;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.modal-close{
+    color: #dde6e0;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    width: 30px;
+}
+
+.modal-close img{
+    width: 20px;
+    height: 20px;
+}
+
+.modal-window input{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #19441f;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: #000;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.modal-window input:focus{
+    width: 300px;
+    border-color: seagreen;
+}
+
+.modal-window button{
+    border: 0;
+    background: #2ecc71;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    color: #000;
+    border-radius: 25px;
+    transition: 0.50s;
+    cursor: pointer;
+}
+ .modal-window button:hover{
+    background: #19441f;
+    color: #2ecc71;
+ }
