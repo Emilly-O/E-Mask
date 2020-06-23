@@ -4,25 +4,26 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-}
+} 
 
 body {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    background: #16384c;
+    background: #2ecc708d;
     /* margin: 0 auto;
     /* background-color: #2ecc71;
     font-family: 'Roboto', sans-serif; */
 }
 
  nav {
-    margin-top: 0px;
+    position: fixed;
+    margin-top: -500px;
     display: flex;
     flex-direction: row;
     text-align: center;
     background: #dde6e0;
-    justify-content: center;
+    justify-content: top;
 }
 
 nav ul li {
@@ -34,7 +35,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     transition: 0.25s
 }
 
@@ -90,7 +91,7 @@ nav a:hover{
 /* teste */
 
 .container{
-    position: relative;
+    position: flex;
     width: 1100px;
     display: flex;
     justify-content: center;
@@ -110,6 +111,8 @@ nav a:hover{
     flex-direction: column;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    
 }
 
 .container .card:hover{
@@ -118,24 +121,25 @@ nav a:hover{
 
 .container .card .imgBx{
     position: relative;
+    display: flex;
     width: 260px;
     height: 260px;
     top: -60px;
-    left: 20px;
+    left: 5px;
     z-index: 1;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
 .container .card .imgBx img{
     max-width: 100%;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .container .card .content{
     position: relative;
     margin-top: -140px;
     padding: 10px 15px;
-    text-align: center;
+    text-align: left;
     color: #111;
     visibility: hidden;
     opacity: 0;
