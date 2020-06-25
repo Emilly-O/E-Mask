@@ -1,10 +1,16 @@
 body {
     margin: 0 auto;
-    background-image: url(../../../assets/img/sau.jpg);
+    height: 100%;
+    background-image: url(../../../assets/img/back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
     
+}
+
+#trans{
+    background-color: rgb(46,204,113,0.5);
+    height: 100%;
 }
 
 .card {
